@@ -1,9 +1,10 @@
 <script setup>
-import TheWelcome from "../components/TheWelcome.vue";
+import QuizVue from "@/components/Quiz/QuizVue.vue";
+import { state } from "@/stores/quizStore";
 </script>
 
 <template>
   <main>
-    <TheWelcome />
+    <QuizVue :quiz="state" />
   </main>
 </template>
